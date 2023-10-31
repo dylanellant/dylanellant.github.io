@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+
+
+		#house{
+			width:1500px;
+			height:800px;
+			background-image:url("https://classroomclipart.com/image/static7/preview2/haunted-house-surrounded-by-bats-and-scary-pumpkins-in-a-hallowe-61749.jpg");
+			background-size:cover;
+			position:absolute;
+			top:0px;
+			left:0px;
+			opacity:50;
+			z-index:-10;
+
+
+		}
+		#julian{
+		width:200px;
+		height:200px;
+		background-color:darkseagreen;
+		background-image:url("julian23.png");
+		background-size:cover;
+		position:absolute;
+		top:525px;
+		right:600px;
+		transition:1s;
+		z-index:10;
+		opacity:0;
+
+	}
+
+		#button{
+			width:100px;
+			height:50px;
+			top:525px;
+			right:500px;
+
+		}
+
+	}
+
+	
+	
+
+</style>
+
+
+</head>
+<body>
+
+	<div id="button">TRICK OR TREAT</div>
+<audio src="julianeating.m4a" id="sound"></audio>
+<!-- <audio scr="juliansound2" id="sound"></audio> -->
+<div id="julian"></div>
+<div id="house"></div>
+
+
+<script type="text/javascript">
+  document.addEventListener("click", function(){
+  	julian.style.opacity = "100";
+  	sound.play()
+
+  })
+
+  </script>
+
+</body>
+</html>

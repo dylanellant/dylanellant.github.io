@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type="text/css">
-		body{background-color:darkorange;}
+		body{background-color:darkblue;}
+
+		.boxes{
+			text-align: center;
+			background-position:center;
+			width:200px;
+			height:150px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			display:inline-block;
+
+
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		#project1{
+			background-image:url(https://i.ebayimg.com/images/g/xM0AAOSwVNNg4oGZ/s-l1600.jpg);
+		}
+
+		#project2{
+			background-image:url(https://content.sportslogos.net/logos/6/216/full/new_york_knicks_logo_primary_19904586.png);
+		}
+
+		#project3{
+			background-image:url(https://content.sportslogos.net/logos/6/216/full/6038.png);
+		}
+
+		p{
+		font-family: 'PT Serif', serif;
+/*		background-color:white;*/
+		color:white;
+		font-size:25px;
+
+	}
+
 	</style>
+
+
+
 </head>
 <body>
 <a href="boxes.html">
-<div id="boxes">
+<div id="project1" class="boxes">
 <p>Project 1: Boxes!</p>
 </div>
 </a>
 
 
 <a href="animation.html">
-<div id="animation">
+<div id="project2" class="boxes">
 <p>Project 2: Funny Animation!</p>
 </div>
-</a>
+
+<a href="jumpscare.html">
+<div id="project3" class="boxes">
+<p>Project 3: Jump Scare :)</p>
+</a> 
 </body>
 </html>
