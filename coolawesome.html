@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+		.decoration{
+			height:150px;
+			width:150px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+
+		}
+
+
+		#one{
+		background-image:url("julian23.png");
+		}
+		#two{
+		background-image:url("knickerbocker.png");
+		}
+		#three{
+		background-image:url("numberzero.png");
+		}
+		#four{
+		background-image:url("numberone.png");
+		}
+		#five{
+		background-image:url("numbertwo.png");
+		}
+		#six{
+			background-image:url("numberthree.png");
+		}
+		#seven{
+			background-image:url("numberfour.png");
+		}
+		#eight{
+			background-image:url("numberfive.png");
+		}
+		#nine{
+			background-image:url("numbersix.png");
+		}
+		#ten{
+			background-image:url("numberseven.png");
+		}
+		#eleven{
+			background-image:url("numbereight.png");
+		}
+		#twelve{
+			background-image:url("numbernine.png");
+		}
+		#jersey{
+		height:900px;
+		width:1700px;
+		background-image:url("jersey.png");
+		background-size:contain;
+		background-repeat:no-repeat;
+
+		}
+	</style>
+</head>
+<body>
+
+
+<div id=jersey></div>
+<div id=one class="decoration"></div>
+<div id=two class="decoration"></div>
+<div id=three class="decoration"></div>
+<div id=four class="decoration"></div>
+<div id=five class="decoration"></div>
+<div id=six class="decoration"></div>
+<div id=seven class="decoration"></div>
+<div id=eight class="decoration"></div>
+<div id=nine class="decoration"></div>
+<div id=ten class="decoration"></div>
+<div id=eleven class="decoration"></div>
+<div id=twelve class="decoration"></div>
+
+
+
+
+<script type="text/javascript">
+var feature;
+
+	one.addEventListener("click", function(){
+		feature = "julian23.png"
+		console.log(feature)
+	})
+	two.addEventListener("click", function(){
+		feature = "knickerbocker.png"
+		console.log(feature)
+	})
+	three.addEventListener("click", function(){
+		feature = "numberzero.png"
+		console.log(feature)
+	})
+	four.addEventListener("click", function(){
+		feature = "numberone.png"
+		console.log(feature)
+	})
+	five.addEventListener("click", function(){
+		feature = "numbertwo.png"
+		console.log(feature)
+	})
+	six.addEventListener("click", function(){
+		feature = "numberthree.png"
+		console.log(feature)
+	})
+	seven.addEventListener("click", function(){
+		feature = "numberfour.png"
+		console.log(feature)
+	})
+	eight.addEventListener("click", function(){
+		feature = "numberfive.png"
+		console.log(feature)
+	})
+	nine.addEventListener("click", function(){
+		feature = "numbersix.png"
+		console.log(feature)
+	})
+	ten.addEventListener("click", function(){
+		feature = "numberseven.png"
+		console.log(feature)
+	})
+	eleven.addEventListener("click", function(){
+		feature = "numbereight.png"
+		console.log(feature)
+	})
+	twelve.addEventListener("click", function(){
+		feature = "numbernine.png"
+		console.log(feature)
+	})
+	
+
+
+
+	
+
+
+
+	jersey.addEventListener("click",
+
+		function makeDiv (event){
+			var decorationjers = document.createElement('div');
+			document.body.appendChild(decorationjers)
+			decorationjers.classList.add('decoration')
+			decorationjers.style.position = "absolute"
+			decorationjers.style.left = event.clientX-80 +"px"
+			decorationjers.style.top = event.clientY+140 +"px"
+			decorationjers.style.backgroundImage = "url(" + feature + ")"
+		})
+
+
+
+
+	
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.banana{
+			height:200px;
+			width:200px;
+			background-image:url("https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg?quality=90&resize=440,400");
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	function makeBanana (input){
+		var banana = document.createElement("div");
+		document.body.appendChild(banana);
+		banana.classList.add("banana");
+
+		banana.addEventListener("click", function(){
+		banana.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Honeycrisp-Apple.jpg/640px-Honeycrisp-Apple.jpg)"
+	})
+	
+	}
+	for (var counter = 1;counter<1000; counter=counter+1){
+		makeBanana(counter)
+	}
+
+	
+
+</script>
+
+
+<div class="banana"></div>
+</body>
+</html>

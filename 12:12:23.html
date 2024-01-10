@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{background-color:dimgrey;}
+		.julian{
+			height:200px;
+			width:200px;
+			background-image:url("julian23.png");
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	function makeJulian (input){
+		var julian = document.createElement("div");
+		document.body.appendChild(julian);
+		julian.classList.add("julian");
+
+		julian.addEventListener("click", function(){
+		julian.style.backgroundImage = "url(juliancool3.png)"
+	})
+	
+	}
+	for (var counter = 1;counter<1000; counter=counter+1){
+		makeJulian(counter)
+	}
+
+	
+
+</script>
+
+
+<div class="julian"></div>
+</body>
+</html>
