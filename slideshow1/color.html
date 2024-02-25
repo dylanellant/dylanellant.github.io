@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	
+	body{
+		background-color:rgb(0,0,0);
+	}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+document.addEventListener("mousemove",function(input){
+	console.log(input.clientX, input.clientY)
+	//var x = Math.round(Math.random()*255)
+	//var y = Math.round(Math.random()*255)
+	//var z = Math.round(Math.random()*255)
+	var x = input.clientX/5
+	var y = input.clientY/2
+	var z = 0
+
+	document.body.style.backgroundColor="rgb("+ x + "," + y + "," + z + ")"
+})
+</script>
+
+</body>
+</html>

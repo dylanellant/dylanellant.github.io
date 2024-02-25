@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<style type="text/css">
+	body{background-color:orangered;}
+	#box{
+		font-size:75px;
+		font-family:comic-sans;
+		color:ghostwhite;
+
+	}
+	#picture{
+		height:600px;
+		width:600px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		right:500px;q
+
+
+	}
+
+</style>
 <div></div>
 </head>
 <body>
-<div>What should you do today? (Click on website)</div>
-
+<div id="picture"></div>
+<div>Who is your "spirit" Knicks player? (Click on website)</div>
+<div id="box" ></div>
+<div id="desc"></div>
 <script type="text/javascript">
-var random = Math.round(Math.random()*5)
+var random = Math.round(Math.random()*10)
+
+
 
 
 
 
 document.addEventListener("click",function(){
-	var adfd = Math.round(Math.random()*todo.length-1)
-	document.body.innerText = todo[adfd]
+	var x = Math.round(Math.random()*13)
+	box.innerText = players[x]
+	picture.style.backgroundImage = place[x]
+	desc.innerText = description[x]
 })
+var players = ["Isaiah Hartenstein", "Jalen Brunson", "OG Anunoby", "Josh Hart", "Julius Randle", "Donte Divencenzo", "Mitchell Robinson", "Quentin Grimes", "Precious Achiuwa", "Ryan Arcidiacano", "Evan Fournier", "Miles McBride", "Jericho Sims", "Malachi Flynn"]
 
-var todo = ["Go to the park", "Go to the museum", "Watch a new movie at the theater", "Find and eat a new food", "Go to the gym"]
+console.log(players.length)
+
+var place = ["url(https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4222252.png&w=350&h=254)", "url(https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3934672.png&w=350&h=254)", "url(https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3934719.png)", "url(https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSnhKmJX8AMUQuafAbvozdpqRIWVGxLdGFWuehvouKjSrStVY2jmmHjVjVSvOedPkrGIDky9XLzOx2Vy6E)", "url(https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQe7Z7tBycasUth1k2UbJk9IhKtePXhJv0JB5vMHv6Lg6Ktt2X58uM-4uDvx10IQbCpLe8jkYYgvRwrYpw)", "url(https://cdn.nba.com/headshots/nba/latest/1040x760/1628978.png)", "url(https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQWI5DKSg9VeQQQoAWf4-_VDnczDuUy9F9SjFZorHuPbz7Q0CSPFHzXINnQvAzrTTnoNiAtIHkHSChafVk)", "url(https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTonB7AG_E-DNYH4Pt_cr5_Yvm0z2rEDAOfdtHm3spJJtgk_JeTNl7J9lHjEIA1dqtR-pfGoCQXwHuol5g)", "url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRgEYhFh-fNytW9JpR7z7MFipC4XSw1NS-aEbUvAy9HAT81-8CZBo6QNZwk7nBbJoTmLNuJ7_xSobyHa8E)", "url(https://cdn.nba.com/headshots/nba/latest/1040x760/1627853.png)", "url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRR44Iz8Z9bSvhIk0_U0U-SoO5bFkW3C2Yw2g3-4sgXwYjh3SRewmhuKnjp09lHRlcIh399KR99iJhvgUQ)", "url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSKwNHLXaDv5X2_hsOtV9yDcC7TGrU1IxBFGg9xZzHcm475Zbao19f_MTnyyAZDNh4o8kM21UeyFlYvgP8)", "url(https://cdn.nba.com/headshots/nba/latest/1040x760/1630579.png)", "url(https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQEPiH-MxxnUzJEc4DZkRrVzKdT7R4wWPYNPwBuwCFMeJc9uoT03GQJjzcuc9l1CYNsMyHGrZjOtZo3990)"]
+var description = ["You are not what you seem, and are quiet until something gets you really, really excited!", "It takes you a while to open up to people, but once you do, you are one of the coolest people.", "You're quiet, reserved, but you're extremely good at something that you do, niche, or not.", "You fight for your friends and family no matter what, and these are the most important in your life.", "You love working hard and being the best at things, and have a fiery heart.", "You are smooth in everything you do, and love to just have fun.", "You have many hobbies and love being diverse and just fun in general.", "You are always focused and concerned for your friends. Without you, life is pretty bland.", "You are also very quiet, but work hard in things that you do.", "Your friends are some of the most important people in your life, and you work as hard as you can for them as well as you to succeed.", "You're somebody who will never give up, and will speak your mind about anything you believe in", "You worked from the bottom to the top, trying your best and becoming the best in what you want.", "You're extremely quiet, but determined to follow your dreams.", "You are waiting for your opportunity to do exactly what you want. You're patient, but excited for the future!"]
 
 
 

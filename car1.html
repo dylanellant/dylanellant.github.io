@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+	#car{
+		width:300px;
+		height:300px;
+		position:absolute;
+		top:10px;
+
+		background-image:url("https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRgGT9NTje7xe9-48T1CKz1UoINskaHVzikvsZMfcAkQ4tVAgQ9a4Q_NSoNukKkUH0Pgh3Aa0pbPcgRJhY");
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+
+</style>
+</head>
+<body>
+
+<div id="car"></div>
+
+<script type="text/javascript">
+	var x =0
+document.addEventListener("keydown", function (event){
+	console.log(event.key)
+
+	if (event.key == "ArrowLeft"){
+		x = x+10;
+		car.style.right = x+"px"
+		console.log(x)
+	}
+	if (event.key == "ArrowRight"){
+		x = x-10;
+		car.style.right = x+"px"
+		console.log(x)
+
+	}
+	if (event.key == "ArrowUp"){
+		x = x-10;
+		car.style.top = x+"px"
+		console.log(x)
+	}
+	if (event.key == "ArrowDown"){
+		x = x+10;
+		car.style.top = x+"px"
+		console.log(x)
+		// for (var counter = 1;counter<140; counter=counter+1){}
+		// moveCar(counter)
+	} // closes if statement//
+	 } //closes function//
+	  ) //closes event listener//
+
+
+
+</script>
+</body>
+</html>
+<!-- make an event listener that moves the picture to the right, left, up, or down depending on the key that is pressed by the user -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+<style type="text/css">
+
+	body{background-color:hotpink;}
+
+
+#text1{
+	font-family: 'PT Serif', serif;
+		color:white;
+		font-size:120px;
+		opacity:1;
+		transition:4s;
+}
+.picture{
+	width:1000px;
+	height:1000px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	position:absolute;
+
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+<div id="text1">HAPPY VALENTINES DAY HALEY!!!</div>
+<div id="picture" ></div>
+<div id="desc" ></div>
+
+
+
+	<script type="text/javascript">
+var random = Math.random(Math.random()*10)
+	document.addEventListener("click", function(){
+	text1.style.opacity = "0"
+	picture.style.opacity = "1"
+	description.style.opacity = "1"
+	var x = Math.round(Math.random()*6)
+	picture.innerText = description[x]
+	picture.style.backgroundImage = picture[x]
+
+})
+var description = ["When we were at the theater,", "When we were at the Knicks game,", "When we saw a Picasso,", "When we were on the train,", "When we were in da church,", "When I watched you sing" ]
+
+console.log(description.length)
+
+
+var picture = [""]
+
+
+
+
+
+
+</script>
+</body>
+</html>

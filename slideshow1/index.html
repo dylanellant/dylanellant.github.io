@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style type="text/css">
+
+			#banana{
+				height:400px;
+				width:400px;
+				background-image:url("https://images.everydayhealth.com/images/diet-nutrition/how-many-calories-are-in-a-banana-1440x810.jpg?sfvrsn=be4504bc_1");
+				background-size:contain;
+				background-repeat:no-repeat;
+
+			}
+
+			.background{
+				height:400px;
+				width:400px;
+				background-image:url("https://i.ytimg.com/vi/WpAo8ArJppQ/maxresdefault.jpg");
+				background-size:contain;
+				background-repeat:no-repeat;
+
+			}
+
+
+
+			
+
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+
+					<h3 class="fragment">My Favorite Baking Projects</h3>
+						<p class="fragment">By Dylan E</p>
+					</section>
+				<section
+				data-background-size="contain" data-background-image="flan.PNG"  
+				>#1 - Flan
+				</section>
+
+				<section
+				data-background-size="contain" data-background-image="chocochipcook.PNG">#2 - Chocolate Chip Cookies
+				</section>
+			
+				<section
+				data-background-size="contain" data-background-image="bananamochi.PNG">#3 - Banana Butter Mochi
+				</section>
+				<section data-background-size="contain" data-background-image="levaincookie.PNG"
+				>#4 - Levain Cookie Recreation</section>
+
+				<div class="background1"></div>
+			</section>
+
+
+
+
+			</div>
+		</div>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
