@@ -8,20 +8,36 @@
 		height:300px;
 		position:absolute;
 		top:10px;
-
-		background-image:url("https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRgGT9NTje7xe9-48T1CKz1UoINskaHVzikvsZMfcAkQ4tVAgQ9a4Q_NSoNukKkUH0Pgh3Aa0pbPcgRJhY");
+		background-image:url("https://www.thesportsdb.com/images/media/player/render/nchnwo1676040624.png");
 		background-size:contain;
 		background-repeat:no-repeat;
+		z-index:0;
 	}
+
+		#court{
+			width:1450px;
+			height:780px;
+			background-image:url("https://nypost.com/wp-content/uploads/sites/2/2023/10/knicks-court.jpg?quality=75&strip=all&1698686228&w=1200");
+			background-size:cover;
+			position:absolute;
+			top:0px;
+			left:0px;
+			z-index:-10;
+		
+		}
+			
+
 
 </style>
 </head>
 <body>
 
 <div id="car"></div>
+<div id="court"></div>
 
 <script type="text/javascript">
 	var x =0
+	var y =0
 document.addEventListener("keydown", function (event){
 	console.log(event.key)
 
@@ -37,13 +53,13 @@ document.addEventListener("keydown", function (event){
 
 	}
 	if (event.key == "ArrowUp"){
-		x = x-10;
-		car.style.top = x+"px"
+		y = y-10;
+		car.style.top = y+"px"
 		console.log(x)
 	}
 	if (event.key == "ArrowDown"){
-		x = x+10;
-		car.style.top = x+"px"
+		y = y+10;
+		car.style.top = y+"px"
 		console.log(x)
 		// for (var counter = 1;counter<140; counter=counter+1){}
 		// moveCar(counter)
