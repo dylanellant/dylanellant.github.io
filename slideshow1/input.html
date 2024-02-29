@@ -3,6 +3,12 @@
 <head>
 	<style type="text/css">
 				body{background-color:lightpink;}
+		#heart{
+			background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png");
+			height:600px;
+			width:650px;
+		}
+
 	</style>
 
 </head>
@@ -19,13 +25,11 @@ Who loves you?
 		button.addEventListener("click", function(){
 			console.log(input.value)
 
-			if (input.value == "dylan") {answer.innerText "You are 100% correct!"}
+			if (input.value == "dylan") {answer.innerText = "You are 100% correct!"}
 
-			else {answer.innerText = "You are 100% correct!"} 
-		
+		else {answer.innerText = "You are 100% correct!"} 
+	
 
-		//+ Math.round(Math.random()*100) + "% correct!"}
-		input.value = ""
 
 
 		})
@@ -34,6 +38,6 @@ Who loves you?
 
 	</script>
 
-
+<div id=heart></div>
 </body>
 </html>
